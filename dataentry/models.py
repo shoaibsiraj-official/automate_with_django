@@ -11,6 +11,19 @@ class Student(models.Model):
         return (f"Student={self.name}+{self.age}")
     
 
+
+class Customer(models.Model):
+    id=models.CharField(primary_key=True)
+    name=models.CharField(null=True)
+    city= models.CharField(null=True)
+    segment=models.CharField(null=True)
+    state = models.CharField(null=True)
+    
+    def __str__(self):
+        return (f'id={self.id},Customer={self.name},City={self.city},Segment={self.segment},State={self.state}')
+
+    
+
 class Employee(models.Model):
     employee_id = models.IntegerField()
     employee_name=models.CharField()
