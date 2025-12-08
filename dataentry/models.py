@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Student(models.Model):
-    roll = models.IntegerField(max_length=10)
+    roll = models.IntegerField()
     name = models.CharField(max_length=20)
     age = models.IntegerField()
     
@@ -37,3 +37,12 @@ class Employee(models.Model):
     def __str__(self):
         return self.employee_name
     
+
+class Upload(models.Model):
+    file_model = models.CharField(max_length=100, default="Unknown")
+    file = models.FileField(upload_to='import-data/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+
+    def __str__(self):
+        return self.file_model

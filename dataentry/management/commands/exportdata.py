@@ -14,10 +14,11 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         model_name = kwargs['model_name']
-
+        model=None
+         #Search in all the installed app if the modl if the model is exits
         for app_config in apps.get_app_configs():
-            try:
-                model = apps.get_model(app_config.label,model_name)
+            try:#get_model is the builtin in django
+                model = apps.get_model(app_config.label,model_name)  #here we find the given model name in app
                 break
             except LookupError:
                 continue
