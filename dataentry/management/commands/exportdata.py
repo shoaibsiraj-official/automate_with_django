@@ -33,6 +33,7 @@ class Command(BaseCommand):
         # Generate the current date and time
         timestamp=datetime.datetime.now().strftime("%y-%m-%d--%H-%M-%S")
         # Define the csv file name/path..
+        #This will define the file path ., 
         file_path=f'Exported_{model_name}_data{timestamp}.csv'
         # Open the csv file and write the data
         with open(file_path,"w",newline='') as file:
