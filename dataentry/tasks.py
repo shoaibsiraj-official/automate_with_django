@@ -12,7 +12,7 @@ def celery_test_task():
     
     to_email = settings.DEFAULT_TO_EMAIL
     send_email_notification(mail_subject,message,to_email)
-    return 'Hello welcome shoaib siraj'
+    return 'Hello welcome shoaib siraj how are you'
 
 @app.task
 def import_data_task(full_path, model_name):
