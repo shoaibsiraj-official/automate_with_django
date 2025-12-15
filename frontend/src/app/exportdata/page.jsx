@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 
 const API_URL = "http://127.0.0.1:8000/api/data-export/";
-
-
 const STATUS_API = "http://127.0.0.1:8000/api/task-status/";
 
 export default function ExportPage() {

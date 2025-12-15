@@ -17,3 +17,189 @@
 .animate-slide-in {
   animation: slide-in 0.4s ease-out;
 }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.bulk-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.bulk-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.bulk-card {
+  background: black; /* light pink (matching your card colors) */
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.bulk-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bulk-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: wheat;
+}
+
+.bulk-form input,
+.bulk-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+}
+
+.bulk-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: #c82333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bulk-btn:hover {
+  background: #a71d2a;
+}
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 50px auto;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.styled-table thead tr {
+  background-color: #f7f7f7;
+}
+
+.styled-table th {
+  padding: 16px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Body Rows */
+.styled-table td {
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+/* Stripe effect */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Row Hover */
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.2s;
+}
+
+/* Download link styling */
+.download-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+    /* // { title: "Compress Images", desc: "Compresses image files and reduces size", color: "#f5c6cb" },
+    
+    // { title: "Email Tracking", desc: "Tracks email open and click rate", color: "#fff3cd",url:"/tracking-email" },
+    // { title: "Web Scraping", desc: "Scrapes websites for useful information", color: "#e2d9f3" }, */
